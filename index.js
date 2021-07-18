@@ -111,10 +111,10 @@ client.connect((err) => {
     });
   });
 });
-
+const port = 5000;
 app.get("/", (req, res) => {
   res.send("app is alaive");
 });
-app.listen(process.env.PORT || 8000, () => {
+app.listen(process.env.PORT || port, () => {
   console.log("app is alive");
 });
